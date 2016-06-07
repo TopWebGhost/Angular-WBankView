@@ -29,18 +29,18 @@ function topicsController(topics) {
 
     vm.activate = activate;
 
-    activate();
+    activateFunc();
 
     ////////////////
 
-    function activate() {
-        topics.topicsObservable.subscribe(function (data) {
+    function activateFunc() {
+        topics.topicsObservable.subscribe(function(data) {
             vm.topics = data;
         });
     }
 
     function getNullTopic() {
-        return {value: 'select topic'};
+        return { value: 'select topic' };
     }
 
     function selectTopic(topic) {
