@@ -10,19 +10,19 @@ function seriesViewController(settings) {
     vm.selectedType = '';
 
     vm.activate = activate;
-    vm.selectType = selectType;
+    vm.selectType = selectViewType;
 
-    activate();
+    activateFunc();
 
     ////////////////
 
-    function activate() {
-        settings.seriesTypeObservable.subscribe(function (type) {
+    function activateFunc() {
+        settings.seriesTypeObservable.subscribe(function(type) {
             vm.selectedType = type;
         })
     }
 
-    function selectType() {
+    function selectViewType() {
         settings.setSeriesType(vm.selectedType);
     }
 }
