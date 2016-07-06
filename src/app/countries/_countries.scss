@@ -1,0 +1,32 @@
+@import "../../scss/_modules";
+
+.countries {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.countries__list {
+    user-select: none;
+}
+
+.countries__scroll {
+    padding-top: 5px;
+    flex: 0 1 auto;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+
+    &:hover {
+        overflow: auto;
+    }
+
+    @include width-breakpoint($desktop_width_breakpoint){
+        overflow: auto;
+    }
+}
+
+.country {
+    color: #444444;
+}

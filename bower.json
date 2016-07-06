@@ -1,0 +1,22 @@
+{
+  "name": "world-bank-data-viewer",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lampas21/world-bank-data-viewer",
+  "authors": [
+    "lampas21 <lampas.odesk@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "n3-line-chart": "*"
+  }
+}

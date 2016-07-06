@@ -1,0 +1,10 @@
+@import "../../scss/_modules";
+
+.series-view__container {
+    padding-left: $spacer-horizontal*2.5;
+    position: relative;
+
+    .radio-inline {
+        padding-right: $spacer-horizontal/2;
+    }
+}

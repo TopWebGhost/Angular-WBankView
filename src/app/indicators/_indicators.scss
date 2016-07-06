@@ -1,0 +1,13 @@
+@import "../../scss/_modules";
+
+.indicators__indicators-list {
+    max-height: 80vh;
+    max-width: 80vw;
+    overflow-y: auto;
+
+    li {
+        a {
+            white-space: normal;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import "../../scss/modules";
+
+a:focus {
+    outline: none;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 10%, rgba(0, 108, 200, 0.05) 90%);
+}
+
+.page {
+    height: 100vh;
+}
+
+.header-wrapper {
+    margin-bottom: $header_bottom_margin;
+}
+
+.content-wrapper {
+    margin: 0 $spacer-horizontal*2 $content_margin_bottom $spacer-horizontal*2;
+    height: $content-height;
+
+    @include height-breakpoint($phone_height_breakpoint) {
+        height: $content_height_phone;
+    }
+}
+
+.footer-wrapper {
+    margin-bottom: $footer_margin_bottom;
+
+    @include height-breakpoint($phone_height_breakpoint) {
+        margin-bottom: $footer_margin_bottom_phone;
+    }
+}
+
+.splash {
+    display: none;
+    margin-top: 50vh;
+    text-align: center;
+}
+
+[ng-cloak].splash {
+    display: block !important;
+}
+

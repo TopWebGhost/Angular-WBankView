@@ -1,0 +1,13 @@
+@import "../../scss/_modules";
+
+.indicator-info__container{
+    padding: $spacer-vertical*2 0 0 $spacer-horizontal*2;
+    text-align: right;
+    overflow-y: auto;
+}
+
+.indicator-info__name{
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 4.8rem;
+}

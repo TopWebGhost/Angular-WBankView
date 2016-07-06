@@ -1,0 +1,20 @@
+@import "../../scss/_modules";
+
+
+.chart{
+    margin-bottom: -25px;
+}
+
+.scrubberText {
+    font-size: 1.4rem;
+}
+
+.series-view-wrapper{
+}
+
+.busy-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

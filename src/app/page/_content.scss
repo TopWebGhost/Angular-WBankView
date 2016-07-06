@@ -1,0 +1,71 @@
+@import "../../scss/modules";
+
+.indicators-wrapper {
+    height: $indicators_height;
+    margin-bottom: $indicators_margin_bottom;
+
+    @include width-breakpoint($phone_width_breakpoint) {
+        display: none;
+    }
+}
+
+.countries-chart-wrapper {
+    display: flex;
+
+    height: calc(100% -
+    #{$indicators_height} -
+    #{$indicators_margin_bottom});
+
+    @include width-breakpoint($phone_width_breakpoint) {
+        height: 100%;
+    }
+}
+
+.countries-wrapper {
+    width: $countries_width;
+    height: 100%;
+
+    @include width-breakpoint($phone_width_breakpoint) {
+        display: none;
+    }
+}
+
+.chart-wrapper {
+    flex: auto;
+    width: calc(100% - #{$countries_width});
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: $spacer-horizontal;
+
+    chart {
+        height: 50%;
+        flex: auto;
+        position: relative;
+    }
+
+    indicator-info {
+        @include height-breakpoint($phone_height_breakpoint) {
+            display: none;
+        }
+    }
+
+    countries-min {
+        display: none;
+        margin-bottom: $spacer-vertical*2;
+        @include width-breakpoint($phone_width_breakpoint) {
+            display: block;
+        }
+    }
+
+    indicators {
+        margin-bottom: $spacer-vertical;
+        display: none;
+        @include width-breakpoint($phone_width_breakpoint) {
+            display: block;
+        }
+        button {
+            white-space: normal;
+        }
+    }
+}

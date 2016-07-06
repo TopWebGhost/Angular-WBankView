@@ -1,0 +1,15 @@
+<div class="dropdown indicators__container">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="indicatorsDropdown"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            data-ng-disabled="vm.isDisabled">
+        {{ vm.selectedIndicator.name }}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu indicators__indicators-list" aria-labelledby="indicatorsDropdown">
+        <li>
+            <a href="#" ng-repeat="indicator in vm.indicators"
+               ng-click="vm.selectIndicator(indicator)">
+                {{ indicator.name }} </a>
+        </li>
+    </ul>
+</div>
